@@ -46,7 +46,7 @@ export default function ProductScreen({ match, history }) {
             <div className="left__info">
               <p className="left__name">{product.name}</p>
               <p>${product.price}</p>
-              <p>{product.description}</p>
+              {/* <p>{product.description}</p> */}
             </div>
           </div>
 

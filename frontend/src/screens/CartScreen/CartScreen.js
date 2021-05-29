@@ -2,10 +2,11 @@ import "./CartScreen.css";
 
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { RollbackOutlined} from '@ant-design/icons';
 
 //Components
 import CartItem from "../../components/CartItem/CartItem";
-
+import {TitleAnimationCartScreen} from "../../components/Animation/TitelAnimation"
 //Actions
 import { addToCart,removeFromCart } from "../../redux/actions/cartActions"
 
@@ -36,10 +37,13 @@ return cartItems.reduce((price,item)=>(item.price * item.qty) + price,0)
   return (
     <div className="cartscreen">
       <div className="cartscreen__left">
-        <h2>Shopping Cart</h2>
+
+        <h2><TitleAnimationCartScreen/></h2>
         {cartItems.length === 0 ? (
           <div>
-            Your Cart is empty <Link to="/">Go Back</Link>
+            Your Cart is empty <Link to="/">
+              Go Back</Link>
+            <RollbackOutlined />
           </div>
         ) : (
           cartItems.map((item) => <CartItem key={item.product} item={item} qtyChangeHandler={qtyChangeHandler} removeFromCartHandler={removeFromCartHandler} />)

@@ -6,10 +6,12 @@ import "./HomeScreen.css";
 
 //Components
 import Product from "../../components/Product/Product";
-
+import {TitleAnimationHomeScreen} from "../../components/Animation/TitelAnimation"
 //Actions
 
 import { getProducts as listProducts } from "../../redux/actions/productActions";
+
+// eslint-disable-next-line no-unused-vars
 const override = `css
   display: block;
   margin: 0 auto;
@@ -19,33 +21,6 @@ const override = `css
 
 export default function HomeScreen() {
 
-  const texts = ['Welcome','To','Sally T-shirt' ];
-  
-  let count = 0;
-  let index= 0;
-  let currentText ='';
-  let letter='';
-
-  
-  
-  
-  (function type() {
-      if(count ===texts.length){
-          count =0;
-      }
-      currentText=texts[count];
-      letter=currentText.slice(0,++index);
-      
-  
-      document.getElementsByName('h2').textContent =letter;
-      if(letter.length === currentText.length){   
-          count++;
-          index = 0;
-      }
-      setTimeout(type,400)
-  
-  }())
-  
 
 
   
@@ -61,7 +36,9 @@ export default function HomeScreen() {
 
   return (
     <div className="homescreen">
-      <h2 className="homescreen__title">{texts}</h2>
+      <h2 className="homescreen__title">
+        <TitleAnimationHomeScreen/>
+      </h2>
 
       <div className="homescreen__products">
         {loading ? <ScaleLoader/> : error ? <h2>{error}</h2> : products.map(product =>(

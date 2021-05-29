@@ -20,13 +20,13 @@ letter-spacing:  5px;
 }
 
 .navbar_logo h2:hover{
-  color: white;
+  color: rgb(161, 156, 156);
 }
 
 .navbar_logo h2{
   text-shadow: -1px 0 rgb(207, 205, 205), 0 1px rgb(207, 205, 205), 1px 0 rgb(207, 205, 205), 0 -1px rgb(207, 205, 205);
 
-  color: #bbb6b6;
+  color: #ffffff;
   font-size: 1.4rem;
   cursor: pointer;
 }
@@ -42,7 +42,7 @@ letter-spacing:  5px;
 
 .navbar_links > li > a {
 
-  text-shadow: -1px 0 rgb(207, 205, 205), 0 1px rgb(207, 205, 205), 1px 0 rgb(207, 205, 205), 0 -1px rgb(207, 205, 205);
+  /* text-shadow: -1px 0 rgb(207, 205, 205), 0 1px rgb(207, 205, 205), 1px 0 rgb(207, 205, 205), 0 -1px rgb(207, 205, 205); */
 
   text-decoration: none;
   color: rgb(126, 116, 116);
@@ -56,7 +56,9 @@ letter-spacing:  5px;
   display: flex;
   align-items: center;
   margin-left: 8px;
+  color:white;
 }
+
 
 .cart__link {
   /* background: rgb(107, 104, 104); */
@@ -73,11 +75,12 @@ letter-spacing:  5px;
     background: rgb(220, 221, 224);
     border-radius: 50%;
     margin-left: 8px;
-    color: rgb(57, 188, 206);
+    color: rgb(0, 0, 0);
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 1rem;
+    font:bold;
   }
 
   .hamburger_menu{

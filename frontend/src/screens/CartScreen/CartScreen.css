@@ -2,11 +2,17 @@
 display: flex;
 max-width: 1300px;
 margin:2rem auto;
-
 }
 
+ a{
+    color:white;
+}
+.cartitem__price{
+    color:black;
+}
 .cartscreen h2{
     margin-bottom: 1rem;
+    /* color:white; */
 }
 
 .cartscreen__left{
@@ -14,6 +20,7 @@ flex:0.7;
 margin-right: 1rem;
 background-color: transparent;
 padding:1rem;
+color: white;
 }
 
 .cartscreen__right{
@@ -21,6 +28,7 @@ flex:0.3;
 background: white;
 box-shadow: 0 1px 4px rgba(0,0,0,0.4);
 height: fit-content;
+color: #000000;
 
 }
 
@@ -35,6 +43,11 @@ padding:1rem;
 
 .cartscreen__info p{
     padding:8px;
+
+}
+
+.cartscreen__left > a{
+    color: white;
 
 }
 

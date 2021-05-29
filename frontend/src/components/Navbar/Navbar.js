@@ -1,7 +1,8 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { RedditOutlined} from '@ant-design/icons';
+import { RedditOutlined,ShoppingCartOutlined,HomeOutlined} from '@ant-design/icons';
+
 
 export default function Navbar({ click }) {
   const cart = useSelector((state) => state.cart);
@@ -22,7 +23,7 @@ export default function Navbar({ click }) {
         <li>
       
           <Link to="/cart" className="cart__link">
-            <i className="fas fa-shopping-cart"></i>
+          <ShoppingCartOutlined />
             <span>
               Cart
               <span className="cartlogo_badge">{getCartCount()}</span>
@@ -30,7 +31,12 @@ export default function Navbar({ click }) {
           </Link>
         </li>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">
+          <HomeOutlined />
+          <span>
+            Home
+          </span> 
+            </Link>
         </li>
       </ul>
 

@@ -11,6 +11,8 @@ body {
     background-image: url('./images/storebg.jpeg');
     background-size: cover;
     letter-spacing: 5px;
+    height: 100vh;
+   background-repeat: no-repeat;
    
 }
 

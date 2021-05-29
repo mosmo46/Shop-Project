@@ -14,7 +14,7 @@ import CartScreen from './screens/CartScreen/CartScreen';
 import Navbar from './components/Navbar/Navbar'
 import Backdrop from './components/Backdrop/Backdrop'
 import SideDrawer from './components/SideDrawer/SideDrawer'
-
+import Footer from './components/Footer/Footer'
 function App() {
   
   const [sideToggle, setSideToggle] = useState(false);
@@ -34,8 +34,8 @@ function App() {
 
   
 </Switch>
-
 </main>
+<Footer/>
 
 
     </Router>
