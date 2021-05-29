@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karantina', cursive;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url('./images/storebg.jpeg');
+    background-size: cover;
+    letter-spacing: 5px;
+   
+}
+
+img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
