@@ -6,9 +6,6 @@ import { RedditOutlined,ShoppingCartOutlined,HomeOutlined} from '@ant-design/ico
 
 export default function Navbar({ click }) {
   const cart = useSelector((state) => state.cart);
-
-
-
   
   const { cartItems } = cart;
 
@@ -19,9 +16,9 @@ export default function Navbar({ click }) {
   return (
     <> 
     <nav className="navbar">
+      
       <ul className="navbar_links">
         <li>
-      
           <Link to="/cart" className="cart__link">
           <ShoppingCartOutlined />
             <span>

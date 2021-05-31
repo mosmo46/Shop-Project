@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300&family=Suez+One&family=Titillium+Web:ital,wght@1,200;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300&family=Suez+One&family=Titillium+Web:ital,wght@0,300;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
 .product{
     width: 300px;
     padding:1rem;
@@ -10,8 +12,12 @@
     flex-direction: column;
     justify-content: space-between;
     border-radius: 49px;
+    color:white;
 }
 
+a{
+    color:white;
+}
 .product > img{
     height: 170px;
     border-radius:auto;
@@ -47,17 +53,19 @@ font-family: 'Suez One', serif;
     width:100%;
     text-decoration: none;
     text-align: center;
-    color: #171717;
-    /* background: wheat; */
     padding: 8px 16px;
-   border: 1px solid #171717;
+   border: 1px solid #ffffff;
    font-size:1rem;
+   color:rgb(53, 222, 228);
+   font-family: 'Limelight', cursive;
+   background-color: white;
+   
 }
 
 
 .info__button:hover{
-    background:#171717;
-    color: wheat;
+    background:#ffffff;
+    color: rgb(26, 146, 194);
 }
 
 
